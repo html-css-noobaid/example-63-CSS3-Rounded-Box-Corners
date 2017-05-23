@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS3: Rounded Box Corners</title>
+		
+		<style type="text/css">
+			body {
+				background-color: SlateGray;
+				color: White;
+				font-family: "Courier New", Courier, monospace;
+			}
+
+			.ex1 {
+				width: 200px;
+				height: 200px;
+				min-width: 200px;
+				max-width: 250px;
+				min-height: 200px;
+				max-height: 250px;
+				background-color: Salmon;
+				overflow: scroll;
+				display: inline-block;
+			}
+
+			#left {
+				margin-left: 30px;
+				overflow: hidden;
+			}
+
+			#bottom {
+				margin-top: 70px;
+				display: block;
+			}
+			
+			.ex2 {
+				width: 200px;
+				height: 200px;
+				background-color: Teal;
+	/* other valid border-style values: "dotted, dashed, double, none" */
+				border-style: Solid;
+				border-width: 4px;
+				border-color: GoldenRod;
+				padding: 20px;
+	/*			
+				padding-top:20px;
+				padding-right: 20px;
+				padding-bottom: 20px;
+				padding-left: 20px;
+			
+				padding shorthand: top, right, bottom, left
+				padding: 20px 20px 20px 20px;
+	*/
+				margin: auto;
+			}
+
+			.ex3 {
+				
+				width: 200px;
+				height: 200px;
+				background-color: Teal;
+				border-style: Solid;
+				border-width: 10px;
+				border-color: GoldenRod;
+				padding: 20px;
+			}
+
+			#sharp1 {	
+				border-radius: 0px;
+			}
+
+			#sharp2 {	
+				border-radius: 20px;
+			}
+
+			#sharp3 {
+				border-radius: 40px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>CSS Box Tutorial</h1>
+		
+		<h2>Example #1: Box Dimensions</h2>
+		
+		<p class="ex1"> CSS has properties that allows you to set
+			the height and width of boxes, as well as 
+			the minimum/maximum height and width. We 
+			use the overflow property to decide whether
+			we want a scrollbar or we want to cut off
+			text that does not fit in the box.</p>
+
+		<p class="ex1" id="left">The display property 
+			allows us to decide if we want our box
+			to act like a block element where each box
+			starts on a new line or an inline element
+			where we can have several boxes on the same 
+			line.</p>
+
+		<p class="ex1" id="bottom">The margin properties 
+			(margin-top, margin-right, margin-bottom, 
+			margin-left) allow us to control the gaps
+			between boxes. </p>
+
+		<h2>Example #2: Box Borders</h2>
+		
+		<p class="ex2">CSS has properties to set the width of box
+		        borders, the style of the border (solid line, dotted line,
+		        etc.), and the color of the border. The padding property
+		        allows you to set the amount of space between the
+		        text within a box. </p>
+
+		<h2>Example #3: Rounded Box Corners</h2>
+
+		<p class="ex3" id="sharp1">CSS3 introduces the ability to 
+			create rounded corners on any box, using a 
+			property called border-radius. The higher the 
+			value, the rounder the corner. Lower values will 
+			have sharper corners. </p>
+
+		<p class="ex3" id="sharp2">CSS3 introduces the ability to 
+			create rounded corners on any box, using a
+			property called border-radius. The higher the 
+			value, the rounder the corner. Lower values will
+			 have sharper corners. </p>
+
+		<p class="ex3" id="sharp3"> CSS3 introduces the ability to 
+			create rounded corners on any box, using a
+			property called border-radius. The higher the 
+			value, the rounder the corner. Lower values will
+			 have sharper corners.</p>
+	</body>
+</html>
